@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 interface EventoTimeline {
   id?: number;
-  tipoEvento?: string | number;
+  tipoEvento?: string;
   resumen?: string;
   fecha?: string;
   icon?: string;
