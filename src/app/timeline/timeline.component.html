@@ -1,0 +1,23 @@
+<section class="timeline">
+    <div>
+
+
+        <div [ngClass]="classPos">
+            <div [ngClass]="isAnimated ? 'timeline-img animatedTime' : 'timeline-img'"
+                [style.background]="color">
+                <mat-icon aria-hidden="false" aria-label="icon">{{icon}}</mat-icon>
+            </div>
+
+            <div class="timeline-content" [ngClass]="{'disabled-element': disabled}">
+                <div class="date" [style.background-color]="color">
+                    <p>{{dateValue | date:"yyyy-MMM-dd HH:mm:ss"}} - {{nameAct}}</p>
+                </div>
+
+                <div class="inner-content">
+                    <ng-content></ng-content>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
