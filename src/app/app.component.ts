@@ -4,10 +4,10 @@ interface EventoTimeline {
   id?: number;
   tipoEvento?: string;
   resumen?: string;
-  fecha?: string;
+  fecha?: Date;
   icon?: string;
   color?: string;
-  severidad?: string;
+  severidad?: number;
   estado?: string;
   isAnimated?: boolean;
   classPos?: string;
@@ -26,10 +26,10 @@ export class AppComponent {
     {
       id: 1,
       tipoEvento: 'Creación',
-      fecha: '2021-05-16 00:00:00',
+      fecha: new Date('2021-05-16 00:00:00'),
       icon: 'star_purple5000',
       color: '#239B56',
-      severidad: '',
+      severidad: 1,
       estado: 'Nuevo',
       resumen: 'Evento de creación',
       isAnimated: false,
@@ -38,10 +38,10 @@ export class AppComponent {
     {
       id: 2,
       tipoEvento: 'Editar',
-      fecha: '2021-05-17 00:00:00',
+      fecha: new Date('2021-05-17 00:00:00'),
       icon: 'edit',
       color: '#2980B9',
-      severidad: '',
+      severidad: 1,
       estado: 'Editar',
       resumen: 'Evento de edición',
       isAnimated: true,
@@ -50,10 +50,10 @@ export class AppComponent {
     {
       id: 3,
       tipoEvento: 'Eliminar',
-      fecha: '2021-05-18 00:00:00',
-      icon: 'clear',
+      fecha: new Date('2021-05-18 00:00:00'),
+      icon: 'e14c',
       color: '#CB4335',
-      severidad: '',
+      severidad: 1,
       estado: 'Borrado',
       resumen: 'Evento de borrado',
       isAnimated: false,
@@ -62,10 +62,10 @@ export class AppComponent {
     {
       id: 4,
       tipoEvento: 'Agregar',
-      fecha: '2021-05-19 00:00:00',
+      fecha: new Date('2021-05-19 00:00:00'),
       icon: 'edit',
       color: '#F39C12',
-      severidad: '',
+      severidad: 1,
       estado: 'Agregado',
       resumen: 'Evento de agregado',
       isAnimated: true,
